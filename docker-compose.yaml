@@ -1,0 +1,8 @@
+version: '3'
+services:
+  server:
+    container_name: gin-is-fun
+    build: .
+    image: localhost:5000/gin-is-fun
+    ports:
+      - 8080:8080

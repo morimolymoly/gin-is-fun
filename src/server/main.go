@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/morimolymoly/gin-is-fun/handler"
+	"github.com/morimolymoly/gin-is-fun/src/handler"
 )
 
 func main() {
