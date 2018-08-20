@@ -7,10 +7,18 @@ skaffoldでビルド&デプロイする
 
 ## minikube上のdocker local registryにpush
 ```sh
-make skaffold
+# deploy
+make deploy
 
 # port foward
 make port-foward
 
+# apiを叩く
 curl localhost:8080/ping
+
+# 再読込
+make reload
+
+# pod削除
+make delete
 ```

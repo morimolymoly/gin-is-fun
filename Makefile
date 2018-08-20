@@ -2,9 +2,16 @@
 use-minikube:
 	kubectl config use-context minikube
 
-.PHONY: skaffold
-skaffold:
-	skaffold dev
+.PHONY: deploy
+deploy:
+	skaffold run
+
+.PHONY: delete
+delete:
+	skaffold delete
+
+.PHONY: reload
+reload: delete deploy
 
 .PHONY: port-foward
 port-foward:
