@@ -8,6 +8,6 @@ import (
 // Ping/へのハンドラ
 func Pong(c *gin.Context) {
 	c.JSON(200, gin.H{
-		"message": "pong",
+		"message": "pongpong",
 	})
 }

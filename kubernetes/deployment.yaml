@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: gin-is-fun
-        image: gin-is-fun:local
+        image: localhost:5000/gin-is-fun2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080

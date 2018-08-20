@@ -1,17 +1,16 @@
 # gin-is-fun
-minikubeのdockerでイメージをビルドしてdeployする．
-## how2
-```sh
-# minikubeのdockerでbuild
-make push-kube
+skaffoldでビルド&デプロイする
 
-# minikubeにdeploy
-make deploy
+## requirements
+* skaffold
+* [docker local registry](https://github.com/morimolymoly/repository-compose)
+
+## minikube上のdocker local registryにpush
+```sh
+make skaffold
 
 # port foward
 make port-foward
 
-# apiを叩く
 curl localhost:8080/ping
-{"message":"pong"}
 ```

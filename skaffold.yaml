@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1alpha2
+kind: Config
+build:
+  artifacts:
+  - imageName: localhost:5000/gin-is-fun2
+deploy:
+  kubectl:
+    manifests:
+      - kubernetes/deployment.yaml
