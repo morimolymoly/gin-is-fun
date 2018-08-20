@@ -1,9 +1,17 @@
 # gin-is-fun
-## requirements
-* [docker local repository](https://github.com/morimolymoly/repository-compose)
-
+minikubeのdockerでイメージをビルドしてdeployする．
 ## how2
-```
-make build
-make push
+```sh
+# minikubeのdockerでbuild
+make push-kube
+
+# minikubeにdeploy
+make deploy
+
+# port foward
+make port-foward
+
+# apiを叩く
+curl localhost:8080/ping
+{"message":"pong"}
 ```
