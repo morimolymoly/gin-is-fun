@@ -4,11 +4,11 @@ use-minikube:
 
 .PHONY: deploy
 deploy:
-	skaffold run
+	skaffold run -f local-skaffold.yaml
 
 .PHONY: delete
 delete:
-	skaffold delete
+	skaffold delete -f local-skaffold.yaml
 
 .PHONY: reload
 reload: delete deploy

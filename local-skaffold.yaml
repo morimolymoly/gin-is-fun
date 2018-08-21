@@ -2,7 +2,7 @@ apiVersion: skaffold/v1alpha2
 kind: Config
 build:
   artifacts:
-  - imageName: us.gcr.io/hoge/gin-is-fun2:1.0
+  - imageName: localhost:5000/gin-is-fun2
 deploy:
   kubectl:
     manifests:

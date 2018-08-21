@@ -22,3 +22,7 @@ make reload
 # pod削除
 make delete
 ```
+
+## skaffold
+* skaffold.yaml 本番deploy
+* local-skaffold.yaml ローカル用
